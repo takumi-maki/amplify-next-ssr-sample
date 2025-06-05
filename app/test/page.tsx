@@ -1,7 +1,7 @@
 import RevalidateTest from "@/components/revalidate";
 
 export default async function Page() {
-  const fuga = await fetch("http://localhost:3000/api", {
+  const fuga = await fetch("https://main.d1zjxntokfr2e6.amplifyapp.com/api", {
     next: { tags: ["test-revalidate"] },
   });
   const resp = await fuga.json();
